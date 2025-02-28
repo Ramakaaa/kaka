@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЖМИ СЮДА!</title>
+</head>
+<body>
+    <button id="playButton" style="font-size: 24px; padding: 10px;">🔊 Нажми, чтобы услышать звук!</button>
+    <audio id="prankAudio">
+        <source src="https://drive.google.com/uc?export=download&id=1IzivIVuxXB1tuOVAsD0jvi4GSNEWmy3C" type="audio/mp3">
+    </audio>
+
+    <script>
+        document.getElementById("playButton").addEventListener("click", function() {
+            let audio = document.getElementById("prankAudio");
+            audio.play();
+        });
+    </script>
+</body>
+</html>
